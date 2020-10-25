@@ -27,12 +27,12 @@ router.post('/contact', async (req, res) => {
   transporter.sendMail({
     from: '"pahal" <pahal@pahalsonu.com>', // sender address
     to: `iprash011@gmail.com, ${email}`, // list of receivers
-    subject: `Hello ${name}! Wish u a very happy dushera `, // Subject line
+    subject: `Hello ${name}! Nodamailer Test`, // Subject line
     html: `<b>Hello I am Sonu Pahal</b> <br />
         <p> My Email ID is : ${email} </p>
-        <p> My Choice is celebrate tomorrow fest: ${choice} </p>
-        <p> I am looking for this cleberation  : ${service} </p>
-        <p> within this budget of  : ${budget} </p>
+        <p> My Choice is test nodemailer test for this app: ${choice} </p>
+        <p> I am looking for your response, reply on same mail   : ${service} </p>
+        <p> within this this week.(neglect these form variables)  : ${budget} </p>
         <br />
         <p> Remarks : ${message}</p>
     `,
